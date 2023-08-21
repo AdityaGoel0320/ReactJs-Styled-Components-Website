@@ -17,7 +17,7 @@ const HeroSection = () => {
             I'm {name}. A Front End Developer and Coder .  Also currently learning MERN stack Development.
           </p>
           <Button className="btn hireme-btn">
-            <NavLink to="/contact"> hire me </NavLink>
+            <a href="https://drive.google.com/file/d/1H5h2dMrJIlpxpfZEX33YdJ5e9Ql93kU-/view?usp=sharing" target = "_blank">hire me</a> 
           </Button>
         </div>
 

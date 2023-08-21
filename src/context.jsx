@@ -3,7 +3,7 @@ import reducer from "./reducer";
 
 const AppContext = React.createContext();
 
-const API = "https://thapareactapi.up.railway.app";
+// const API = "https://thapareactapi.up.railway.app";
 
 const intialState = {
   name: "",
@@ -35,20 +35,20 @@ const AppProvider = ({ children }) => {
   };
 
   //  to get the api data
-  const getServices = async (url) => {
-    try {
-      const res = await fetch(url);
-      const data = await res.json();
-      dispatch({ type: "GET_SERVICES", payload: data });
-    } catch (error) {
-      console.log(error);
-    }
-  };
+  // const getServices = async (url) => {
+  //   try {
+  //     const res = await fetch(url);
+  //     const data = await res.json();
+  //     dispatch({ type: "GET_SERVICES", payload: data });
+  //   } catch (error) {
+  //     console.log(error);
+  //   }
+  // };
 
   // to call the api
-  useEffect(() => {
-    getServices(API);
-  }, []);
+  // useEffect(() => {
+  //   getServices(API);
+  // }, []);
 
   return (
     <AppContext.Provider value={{ ...state, updateHomePage, udpateAboutPage }}>
